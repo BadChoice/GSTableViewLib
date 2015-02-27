@@ -1,10 +1,10 @@
 # GSTableViewLib
-A sensible tableview open implementation
+An easy and fast way to create UITableViewControllers with live models update
 
 
-###Insallation  
+##Insallation  
 
-##Using pods  
+####Using pods  
 ```
 pod 'GSTableViewLib', :git => 'https://github.com/BadChoice/GSTableViewLib.git'  
 ```
@@ -12,10 +12,12 @@ pod 'GSTableViewLib', :git => 'https://github.com/BadChoice/GSTableViewLib.git'
 ####Manual  
 Download the source and copy the GSTableViewLib folder into your project  
 
+   
+     
 
 ##Usage  
 
-Just extend ```GSTableViewController``` and add the ```setup```method
+Just extend ```GSTableViewController``` and only add the ```setup``` method
 
 ```
 -(void)setup{
@@ -56,4 +58,5 @@ Check the sample project for a more detailed example
 ```GSSegmentedCell```   
 ```GSDateCell```   
 ```GSDetailCell```   
-```GSSelectCell```   
+```GSSelectCell```    
+```GSButtonCell```      

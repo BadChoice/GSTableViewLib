@@ -12,7 +12,6 @@
     
     BOOL isFiltered;
     UISearchBar *searchBar;
-    UISearchDisplayController *searchDisplayController;   
 }
 
 @property (strong,nonatomic) NSMutableArray* filteredSections;

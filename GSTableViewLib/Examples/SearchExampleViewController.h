@@ -8,6 +8,8 @@
 
 #import "GSSearchTableViewViewController.h"
 
-@interface SearchExampleViewController : GSSearchTableViewViewController
+@interface SearchExampleViewController : GSSearchTableViewViewController{
+	NSArray* data;
+}
 
 @end

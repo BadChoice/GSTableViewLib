@@ -8,6 +8,7 @@
 
 #import "MainExampleViewController.h"
 #import "ModelDetailExampleViewController.h"
+#import "SearchExampleViewController.h"
 
 #import "GSTableViewLib.h"
 #import "GSAlertView.h"
@@ -105,7 +106,7 @@
 	
 	
 	[secondSection.cells addObject:[GSControllerCell cellWithText:@"Search example"
-													andController:[[GSSearchTableViewViewController alloc] init]
+													andController:[[SearchExampleViewController alloc] init]
 	]];
 	
 	

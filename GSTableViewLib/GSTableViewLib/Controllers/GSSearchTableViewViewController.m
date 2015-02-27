@@ -33,7 +33,7 @@
 #pragma mark - TABLE VIEW DELEGATE
 //================================================
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (tableView == self.searchDisplayController.searchResultsTableView){
+    if (tableView != self.tableView){
         return [self.filteredSections count];
     }
     else{
@@ -147,7 +147,6 @@
 
 -(void)dealloc{
     searchBar               = nil;
-    searchDisplayController = nil;
 }
 
 
