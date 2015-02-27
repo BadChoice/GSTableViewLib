@@ -43,6 +43,7 @@
 		C2034E081AA0884800AEA66D /* SampleModelWithDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */; };
 		C2034E0A1AA08DF700AEA66D /* GSTableViewLib.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = C2034E091AA08DF700AEA66D /* GSTableViewLib.podspec.json */; };
 		C2034E0C1AA0914900AEA66D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C2034E0B1AA0914900AEA66D /* README.md */; };
+		C2034E0F1AA0936800AEA66D /* GSSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E0E1AA0936800AEA66D /* GSSegmentedCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModelWithDetailInfo.m; path = Examples/SampleModelWithDetailInfo.m; sourceTree = "<group>"; };
 		C2034E091AA08DF700AEA66D /* GSTableViewLib.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GSTableViewLib.podspec.json; sourceTree = "<group>"; };
 		C2034E0B1AA0914900AEA66D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2034E0D1AA0936800AEA66D /* GSSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSegmentedCell.h; sourceTree = "<group>"; };
+		C2034E0E1AA0936800AEA66D /* GSSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSegmentedCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +235,8 @@
 				C2034DB41AA077F200AEA66D /* GSButtonCell.m */,
 				C2034DB51AA077F200AEA66D /* GSControllerCell.h */,
 				C2034DB61AA077F200AEA66D /* GSControllerCell.m */,
+				C2034E0D1AA0936800AEA66D /* GSSegmentedCell.h */,
+				C2034E0E1AA0936800AEA66D /* GSSegmentedCell.m */,
 				C2034DB71AA077F200AEA66D /* GSDateCell.h */,
 				C2034DB81AA077F200AEA66D /* GSDateCell.m */,
 				C2034DB91AA077F200AEA66D /* GSDetailCell.h */,
@@ -429,6 +434,7 @@
 			files = (
 				C2034E081AA0884800AEA66D /* SampleModelWithDetailInfo.m in Sources */,
 				C2034DE31AA077F200AEA66D /* GSSelectCell.m in Sources */,
+				C2034E0F1AA0936800AEA66D /* GSSegmentedCell.m in Sources */,
 				C2034DDD1AA077F200AEA66D /* GSDateCell.m in Sources */,
 				C2034DDB1AA077F200AEA66D /* GSButtonCell.m in Sources */,
 				C2034E0C1AA0914900AEA66D /* README.md in Sources */,

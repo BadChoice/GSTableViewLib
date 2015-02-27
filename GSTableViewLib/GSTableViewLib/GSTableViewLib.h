@@ -22,6 +22,7 @@
 #import "GSSelectModelCell.h"
 #import "GSModelCell.h"
 #import "GSFloatCell.h"
+#import "GSSegmentedCell.h"
 
 #import "GSControllerCell.h"
 
