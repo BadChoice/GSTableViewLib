@@ -106,7 +106,7 @@
 		C2034DD31AA077F200AEA66D /* GSExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSExampleTableViewController.m; sourceTree = "<group>"; };
 		C2034DD41AA077F200AEA66D /* GSSearchTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSearchTableViewViewController.m; sourceTree = "<group>"; };
 		C2034DD51AA077F200AEA66D /* GSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewController.m; sourceTree = "<group>"; };
-		C2034DD61AA077F200AEA66D /* GSTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewSection.m; sourceTree = "<group>"; };
+		C2034DD61AA077F200AEA66D /* GSTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTableViewSection.m; path = ../Controllers/GSTableViewSection.m; sourceTree = "<group>"; };
 		C2034DD71AA077F200AEA66D /* GSTableViewLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewLib.h; sourceTree = "<group>"; };
 		C2034DD91AA077F200AEA66D /* GSTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewSection.h; sourceTree = "<group>"; };
 		C2034DEE1AA078A400AEA66D /* GSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSImageView.h; sourceTree = "<group>"; };
@@ -274,7 +274,6 @@
 				C2034DD31AA077F200AEA66D /* GSExampleTableViewController.m */,
 				C2034DD41AA077F200AEA66D /* GSSearchTableViewViewController.m */,
 				C2034DD51AA077F200AEA66D /* GSTableViewController.m */,
-				C2034DD61AA077F200AEA66D /* GSTableViewSection.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,6 +281,7 @@
 		C2034DD81AA077F200AEA66D /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				C2034DD61AA077F200AEA66D /* GSTableViewSection.m */,
 				C2034DD91AA077F200AEA66D /* GSTableViewSection.h */,
 			);
 			path = Sections;
