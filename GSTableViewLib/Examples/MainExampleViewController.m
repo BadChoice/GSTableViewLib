@@ -27,11 +27,12 @@
 	
 	self.title = @"GSTableViewLib";
 	
-	self.sampleModel = [[SampleModel alloc] init];
-	[self.sampleModel setExampleDataToProperties];
-	
+    self.selectModel            = [[SampleModel alloc] init];
+	self.sampleModel            = [[SampleModel alloc] init];
+    self.sampleModelWithInfo    = [[SampleModelWithDetailInfo alloc] init];
+        
 	GSTableViewSection* firstSection = [[GSTableViewSection alloc] init];
-	firstSection.header = @"First section";
+	firstSection.header = @"Basic cells";
 	
 	/**
 	 #import "GSSelectCell.h"
@@ -43,35 +44,35 @@
 	//-------------------------------------------
 	// Basic cells
 	//-------------------------------------------
-	[firstSection.cells addObject:[GSLabelCell		cellWithText:@"A simple label cell"]];
+	[firstSection addCell:[GSLabelCell		cellWithText:@"A simple label cell"]];
 	
-	[firstSection.cells addObject:[GSTextFieldCell  cellWithText:@"Text field"
+	[firstSection addCell:[GSTextFieldCell  cellWithText:@"Text field"
 													   andObject:self.sampleModel
 														  andKey:@"name"]];
 	
-	[firstSection.cells addObject:[GSSwitchCell		cellWithText:@"Enabled"
+	[firstSection addCell:[GSSwitchCell		cellWithText:@"Enabled"
 													andObject:self.sampleModel
 													   andKey:@"enabled"]];
 	
-	[firstSection.cells addObject:[GSNumberCell		cellWithText:@"Number"
+	[firstSection addCell:[GSNumberCell		cellWithText:@"Number"
 													andObject:self.sampleModel
 													   andKey:@"number"]];
 	
-	[firstSection.cells addObject:[GSFloatCell		cellWithText:@"Decimal"
+	[firstSection addCell:[GSFloatCell		cellWithText:@"Decimal"
 												   andObject:self.sampleModel
 													  andKey:@"decimalNumber"]];
 	
-	[firstSection.cells addObject:[GSSteperCell		cellWithText:@"Stepper"
+	[firstSection addCell:[GSSteperCell		cellWithText:@"Stepper"
 													andObject:self.sampleModel
 													   andKey:@"stepper"]];
 	
-	[firstSection.cells addObject:[GSDateCell		cellWithText:@"Date"
+	[firstSection addCell:[GSDateCell		cellWithText:@"Date"
 												  andObject:self.sampleModel
 													 andKey:@"date"
 											  andPickerMode:UIDatePickerModeDateAndTime]];
 	
 	
-	[firstSection.cells addObject:[GSButtonCell     cellWithText:@"Button" andAction:^{
+	[firstSection addCell:[GSButtonCell     cellWithText:@"Button" andAction:^{
 		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"
 														message:@"A button has been pressed"
 													   delegate:nil
@@ -84,18 +85,18 @@
 	}]];
 	
 	//-------------------------------------------
-	// Cells with subcontrollers
+	// SELECT CELLS
 	//-------------------------------------------
 	GSTableViewSection* secondSection = [[GSTableViewSection alloc] init];
-	secondSection.header = @"Second section";
+	secondSection.header = @"Select cells";
 	
-	[secondSection.cells addObject:[GSSelectCell cellWithText:@"Select string"
+	[secondSection addCell:[GSSelectCell cellWithText:@"Select string"
 												   andObject:self.sampleModel
 													  andKey:@"select"
 													andSelect:@[@"Amazing",@"Great",@"Good",@"Normal",@"Poor",@"Shit"]
 								   ]];
 	
-	[secondSection.cells addObject:[GSSelectCell cellWithText:@"Select with id" andObject:self.sampleModel andKey:@"selectId" andSelectDict:@{
+	[secondSection addCell:[GSSelectCell cellWithText:@"Select with id" andObject:self.sampleModel andKey:@"selectId" andSelectDict:@{
 										  @1 : @"Amazing",
 										  @2 : @"Great",
 										  @3 : @"Good",
@@ -104,19 +105,45 @@
 										  @6 : @"Shit"
 										} keyIsNumber:YES]];
 	
+    
+    [secondSection addCell:[GSSelectModelCell cellWithText:@"Select model"
+                                                 andObject:self
+                                                    andKey:@"selectModel"
+                                            andModelsArray:[SampleModel createModelsArray]]];
+    
+
+    //-------------------------------------------
+    // OTHER CELLS
+    //-------------------------------------------
+    GSTableViewSection* thirdSection = [[GSTableViewSection alloc] init];
+    thirdSection.header = @"Other cells";
+    
+    [thirdSection addCell:[GSControllerCell cellWithText:@"Search example"
+                                            andController:[[SearchExampleViewController alloc] init]
+                            ]];
+    
+    
+    [thirdSection addCell:[GSModelCell cellWithText:@"Model cell (Default)"
+                                           andObject:self
+                                              andKey:@"sampleModel"
+                                            andModel:self.sampleModel]];
+    
+    [thirdSection addCell:[GSModelCell cellWithText:@"Model cell (Custom)"
+                                          andObject:self
+                                             andKey:@"sampleModelWithInfo"
+                                           andModel:self.sampleModelWithInfo]];
+    
+    
+    [thirdSection addCell:[GSDetailCell
+                           cellWithText:@"Subcontroller"
+                           andController:[[ModelDetailExampleViewController alloc] initWithStyle:UITableViewStyleGrouped]]];
+    
+    
+    
 	
-	[secondSection.cells addObject:[GSControllerCell cellWithText:@"Search example"
-													andController:[[SearchExampleViewController alloc] init]
-	]];
-	
-	
-	[secondSection.cells addObject:[GSDetailCell
-									 cellWithText:@"Model edit"
-									 andController:[[ModelDetailExampleViewController alloc] initWithStyle:UITableViewStyleGrouped]]];
-		
-	
-	[self.sections addObject:firstSection];
-	[self.sections addObject:secondSection];
+	[self addSection:firstSection];
+	[self addSection:secondSection];
+	[self addSection:thirdSection];
 }
 
 

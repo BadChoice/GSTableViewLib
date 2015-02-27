@@ -18,21 +18,7 @@
 -(void)setup{
 	[super setup];
 	
-	data = [[NSArray alloc] initWithObjects:
-					  [[SampleModel alloc] init],
-					  [[SampleModel alloc] init],
-					  [[SampleModel alloc] init],
-					  [[SampleModel alloc] init],
-					  [[SampleModel alloc] init],
-					  [[SampleModel alloc] init],
-					  nil];
-	
-	[data[0] setValue:@"Coffe"			forKey:@"name"];
-	[data[1] setValue:@"Milk"			forKey:@"name"];
-	[data[2] setValue:@"Tea"			forKey:@"name"];
-	[data[3] setValue:@"Football"		forKey:@"name"];
-	[data[4] setValue:@"Basketball"	forKey:@"name"];
-	[data[5] setValue:@"Hamburger"		forKey:@"name"];
+    data = [SampleModel createModelsArray];
 	
 	[self.sections addObject:[GSTableViewSection createSectionForModelArray:data withDetail:NO ofObject:[SampleModel class]]];
 	

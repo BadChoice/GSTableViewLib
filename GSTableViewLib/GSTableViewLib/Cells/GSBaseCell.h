@@ -11,7 +11,7 @@
 
 #define TEXT_Y 15
 #define TEXT_X 12
-#define CONTROL_SIZE 150
+#define CONTROL_SIZE 180
 #define IMAGE_SIZE 40
 #define ACCESSORY_WIDTH 30
 

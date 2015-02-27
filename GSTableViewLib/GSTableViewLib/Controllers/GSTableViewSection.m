@@ -25,6 +25,9 @@
     return self;
 }
 
+-(void)addCell:(GSBaseCell*)cell{
+    [self.cells addObject:cell];
+}
 
 //================================================
 #pragma mark - AUTOMATIC TABLE GENERATION
@@ -45,14 +48,16 @@
         const char * type			= property_getAttributes(property);
         
         NSString * typeString		= [NSString stringWithUTF8String:type];
-        NSArray * attributes		= [typeString componentsSeparatedByString:@","];
+        NSArray  * attributes		= [typeString componentsSeparatedByString:@","];
         NSString * typeAttribute	= [attributes objectAtIndex:0];
         typeAttribute				= [typeAttribute substringFromIndex:3];
         typeAttribute				= [typeAttribute substringToIndex:[typeAttribute length] -1];
         
         //NSLog(@"Property name:%@ And type: %@", propertyName,typeAttribute);
         
-        [section.cells addObject:[GSTextFieldCell cellWithText:propertyName andObject:object andKey:propertyName]];
+        [section addCell:[GSTextFieldCell cellWithText:propertyName
+                                             andObject:object
+                                                andKey:propertyName]];
         
     }
     free(properties);

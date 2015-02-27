@@ -51,6 +51,9 @@
     _sections   = [[NSMutableArray alloc] init];    
 }
 
+-(void)addSection:(GSTableViewSection*)section{
+    [self.sections addObject:section];
+}
 
 
 //================================================

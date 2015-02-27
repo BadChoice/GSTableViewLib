@@ -10,6 +10,13 @@
 
 @implementation SampleModel
 
+-(id)init{
+    if(self == [super init]){
+        [self setExampleDataToProperties];
+    }
+    return self;
+}
+
 /**
  * Set some dumb data to properties to they are live updated in the cells
  */
@@ -23,4 +30,23 @@
 	self.selectId		= @1;
 }
 
++(NSArray*)createModelsArray{
+    NSArray *data = [[NSArray alloc] initWithObjects:
+            [[SampleModel alloc] init],
+            [[SampleModel alloc] init],
+            [[SampleModel alloc] init],
+            [[SampleModel alloc] init],
+            [[SampleModel alloc] init],
+            [[SampleModel alloc] init],
+            nil];
+    
+    [data[0] setValue:@"Coffe"			forKey:@"name"];
+    [data[1] setValue:@"Milk"			forKey:@"name"];
+    [data[2] setValue:@"Tea"			forKey:@"name"];
+    [data[3] setValue:@"Football"		forKey:@"name"];
+    [data[4] setValue:@"Basketball"	forKey:@"name"];
+    [data[5] setValue:@"Hamburger"		forKey:@"name"];
+
+    return data;
+}
 @end

@@ -15,6 +15,10 @@
 	"authors": {
 	"Jordi Puigdellívol": "jordo@gloobus.net"
 },
-	"source_files": "GSTableViewLib/GSTableViewLib/**/*",
+	"source_files": [
+                     "GSTableViewLib/GSTableViewLib/**/*",
+                     "GSTableViewLib/GSActionSheet/**/*",
+                     "GSTableViewLib/GSAlertView/**/*"
+                     ],
 	"requires_arc": true
 }

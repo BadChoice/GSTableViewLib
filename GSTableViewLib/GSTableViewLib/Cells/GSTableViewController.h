@@ -42,6 +42,7 @@ typedef NSUInteger GSCellType;
 @property (strong,nonatomic) UILabel* parentControllerLabel;
 
 
+-(void)addSection:(GSTableViewSection*)section;
 
 -(void)setup;
 -(int)count;

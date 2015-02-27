@@ -7,14 +7,15 @@
 //
 
 #import "GSTableViewController.h"
-#import "SampleModel.h"
+#import "SampleModelWithDetailInfo.h"
 
 @interface MainExampleViewController : GSTableViewController{
 	
 }
 
 @property (strong,nonatomic) SampleModel* sampleModel;
-@property (strong,nonatomic) SampleModel* model;
+@property (strong,nonatomic) SampleModel* selectModel;
+@property (strong,nonatomic) SampleModelWithDetailInfo *sampleModelWithInfo;
 @end
 
 

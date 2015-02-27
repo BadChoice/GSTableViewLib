@@ -21,4 +21,6 @@
 
 -(void)setExampleDataToProperties;
 
++(NSArray*)createModelsArray;
+
 @end

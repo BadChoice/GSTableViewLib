@@ -13,7 +13,7 @@
 	GSTableViewController* mSelectViewController;
 }
 
-@property (nonatomic)  NSObject* model;
+@property (strong,nonatomic)  NSObject* model;
 
 +(id)cellWithText:(NSString*)text andObject:(id)object andKey:(NSString*)key andModel:(NSObject*)model;
 

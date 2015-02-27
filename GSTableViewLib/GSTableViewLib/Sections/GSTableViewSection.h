@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GSBaseCell.h"
 
 @interface GSTableViewSection : NSObject
 
@@ -21,5 +22,5 @@
 +(GSTableViewSection*)createSectionForModelArray:(NSArray*)modelArray withDetail:(BOOL)withDetail ofObject:(Class)class withNullText:(NSString *)nullText;
 +(GSTableViewSection*)createSectionFromDefinition:(NSArray*)definitions;
 
-
+-(void)addCell:(GSBaseCell*)cell;
 @end
