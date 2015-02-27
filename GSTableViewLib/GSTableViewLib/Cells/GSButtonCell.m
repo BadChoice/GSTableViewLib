@@ -16,6 +16,12 @@
     return cell;
 }
 
+-(void)setup{
+    [super setup];
+    UIColor *tintColor = [self tintColor];
+    [self.text setTextColor:tintColor];
+}
+
 -(void)onCellPressed:(UITableView*)tableView indexPath:(NSIndexPath*)index controller:(UIViewController*)controller{
     if(_action != nil)
 		dispatch_async(dispatch_get_main_queue(), ^{

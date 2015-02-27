@@ -13,6 +13,7 @@
 }
 
 @property(nonatomic,copy) void (^action)(void);
+@property(strong,nonatomic) UIButton* button;
 
 +(id)cellWithText:(NSString*)text andAction:(void (^)())action;
 

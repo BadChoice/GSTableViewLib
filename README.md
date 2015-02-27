@@ -26,7 +26,7 @@ Just extend ```GSTableViewController``` and only add the ```setup``` method
 	GSTableViewSection* firstSection  = [[GSTableViewSection alloc] init];
 	firstSection.header = @"First section";
 
-	[firstSection.cells addObject:[GSSwitchCell	cellWithText:@"Enabled"
+	[firstSection addCell:[GSSwitchCell	cellWithText:@"Enabled"
 									andObject:self.sampleModel
 									andKey:@"enabled"]];
 
@@ -34,13 +34,14 @@ Just extend ```GSTableViewController``` and only add the ```setup``` method
 	GSTableViewSection* secondSection = [[GSTableViewSection alloc] init];
 	secondSection.header = @"Second section";
 
-	[secondSection.cells addObject:[GSSelectCell cellWithText:@"Select string"
+	[secondSection addCell:[GSSelectCell cellWithText:@"Select string"
 													andObject:self.sampleModel
 														andKey:@"select"
 													andSelect:@[@"Amazing",@"Great",@"Good",@"Normal",@"Poor",@"Shit"]
 	]];
 
-	[self.sections addObjects:firstSection,secondSection,nil];
+	[self addSection:firstSection];
+    [self addSection:secondSection];
 }
 ```
    
