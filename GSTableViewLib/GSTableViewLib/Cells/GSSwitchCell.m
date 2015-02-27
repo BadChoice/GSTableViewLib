@@ -30,6 +30,16 @@
     else                [self updateModelObject:@0];
 }
 
+-(void)changeSwitchValue:(BOOL) active andIsEnabled:(BOOL) isEnabled {
+	
+	if (!isEnabled) {
+		[_theSwitch setOn:active animated:YES];
+		[self didChange];
+	}
+	
+	[_theSwitch setEnabled:isEnabled];
+}
+
 -(void)setObjectProperty:(NSString *)objectProperty{
     [super setObjectProperty:objectProperty];
 	[_theSwitch setOn:[[self.object valueForKey:objectProperty] boolValue] animated:YES];

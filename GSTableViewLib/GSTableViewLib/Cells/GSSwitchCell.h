@@ -14,4 +14,6 @@
 
 @property (strong,nonatomic) UISwitch* theSwitch;
 
+-(void)changeSwitchValue:(BOOL) active andIsEnabled:(BOOL) isEnabled;
+
 @end
