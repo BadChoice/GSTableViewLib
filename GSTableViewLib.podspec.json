@@ -15,6 +15,6 @@
 	"authors": {
 	"Jordi Puigdellívol": "jordo@gloobus.net"
 },
-	"source_files": "GSTableViewLib/*",
+	"source_files": "GSTableViewLib/GSTableViewLib/**",
 	"requires_arc": true
 }
