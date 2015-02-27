@@ -17,7 +17,7 @@
     
     _textField = [[UITextField alloc] initWithFrame:CGRectMake(self.frame.size.width - CONTROL_SIZE - ACCESSORY_WIDTH, TEXT_Y, CONTROL_SIZE, 25)];
     [self addSubview:_textField];
-    _textField.placeholder = @"Placeholder";
+    _textField.placeholder   = @"Placeholder";
     _textField.textAlignment = NSTextAlignmentRight;
     
     [_textField setTextColor:[UIColor grayColor]];
@@ -28,6 +28,7 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     [_textField setFrame:CGRectMake(self.frame.size.width - CONTROL_SIZE - ACCESSORY_WIDTH, TEXT_Y, CONTROL_SIZE, 25)];
+	_textField.placeholder = self.text.text;
 }
 
 -(void)setObjectProperty:(NSString *)objectProperty{
