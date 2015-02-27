@@ -186,11 +186,6 @@
 	return [UIColor colorWithRed:red green:green blue:blue alpha:1];
 }
 
-+ (NSString *)encodeToBase64String:(UIImage *)image {
-    return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-}
-
-
 +(NSString*)md5:(NSString*)string{
 	if(string!=nil){
 		const char *cStr = [string UTF8String];
@@ -209,6 +204,31 @@
 		return @"";
 }
 
+//================================================================
+#pragma mark - BASE 64
+#pragma mark -
+//================================================================
++ (NSString *)imageToBase64:(UIImage*)image {
+	return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+}
+
++ (UIImage *)decodeBase64ToImage:(NSString *)strEncodeData {
+	NSData *data = [[NSData alloc]initWithBase64EncodedString:strEncodeData options:NSDataBase64DecodingIgnoreUnknownCharacters];
+	return [UIImage imageWithData:data];
+	
+	return [UIImage imageWithData:data];
+	
+	//return [UIImage imageWithData:[strEncodeData dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
++(UIImage*)resize:(UIImage*)originalImage newSize:(int)newSize{
+	CGSize size = CGSizeMake(newSize, newSize);
+	UIGraphicsBeginImageContext(size);
+	[originalImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
+	UIImage *destImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return destImage;
+}
 
 //===================================================
 #pragma mark - DEALLOC

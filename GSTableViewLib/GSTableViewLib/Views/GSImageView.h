@@ -26,6 +26,8 @@
 -(void)setInitialLetters:(NSString*)fullName;
 -(void)setInitialLettersAsFullText:(NSString*)fullName;
 
-+ (NSString *)encodeToBase64String:(UIImage *)image;
++ (NSString *)	imageToBase64:(UIImage*)image;
++ (UIImage *)	decodeBase64ToImage:(NSString *)strEncodeData;
 
++ (UIImage*)resize:(UIImage*)originalImage newSize:(int)newSize;
 @end
