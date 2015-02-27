@@ -58,7 +58,7 @@
 	
 	if (selected > segmentedControl.numberOfSegments-1)
 	{
-		ALog(@"Selected out of index");
+		NSLog(@"Selected out of index");
 		return;
 	}
 	
