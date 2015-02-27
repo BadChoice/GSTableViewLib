@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2034D8C1AA077BD00AEA66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034D8B1AA077BD00AEA66D /* main.m */; };
+		C2034D8F1AA077BD00AEA66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034D8E1AA077BD00AEA66D /* AppDelegate.m */; };
+		C2034D921AA077BD00AEA66D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034D911AA077BD00AEA66D /* ViewController.m */; };
+		C2034D951AA077BD00AEA66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2034D931AA077BD00AEA66D /* Main.storyboard */; };
+		C2034D971AA077BD00AEA66D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2034D961AA077BD00AEA66D /* Images.xcassets */; };
+		C2034D9A1AA077BD00AEA66D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2034D981AA077BD00AEA66D /* LaunchScreen.xib */; };
+		C2034DA61AA077BD00AEA66D /* GSTableViewLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DA51AA077BD00AEA66D /* GSTableViewLibTests.m */; };
+		C2034DDA1AA077F200AEA66D /* GSBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DB21AA077F200AEA66D /* GSBaseCell.m */; };
+		C2034DDB1AA077F200AEA66D /* GSButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DB41AA077F200AEA66D /* GSButtonCell.m */; };
+		C2034DDC1AA077F200AEA66D /* GSControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DB61AA077F200AEA66D /* GSControllerCell.m */; };
+		C2034DDD1AA077F200AEA66D /* GSDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DB81AA077F200AEA66D /* GSDateCell.m */; };
+		C2034DDE1AA077F200AEA66D /* GSDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DBA1AA077F200AEA66D /* GSDetailCell.m */; };
+		C2034DDF1AA077F200AEA66D /* GSFloatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DBD1AA077F200AEA66D /* GSFloatCell.m */; };
+		C2034DE01AA077F200AEA66D /* GSLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DBF1AA077F200AEA66D /* GSLabelCell.m */; };
+		C2034DE11AA077F200AEA66D /* GSModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DC11AA077F200AEA66D /* GSModelCell.m */; };
+		C2034DE21AA077F200AEA66D /* GSNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DC31AA077F200AEA66D /* GSNumberCell.m */; };
+		C2034DE31AA077F200AEA66D /* GSSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DC61AA077F200AEA66D /* GSSelectCell.m */; };
+		C2034DE41AA077F200AEA66D /* GSSelectModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DC81AA077F200AEA66D /* GSSelectModelCell.m */; };
+		C2034DE51AA077F200AEA66D /* GSSteperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DCA1AA077F200AEA66D /* GSSteperCell.m */; };
+		C2034DE61AA077F200AEA66D /* GSSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DCC1AA077F200AEA66D /* GSSwitchCell.m */; };
+		C2034DE71AA077F200AEA66D /* GSTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DCF1AA077F200AEA66D /* GSTextCell.m */; };
+		C2034DE81AA077F200AEA66D /* GSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DD11AA077F200AEA66D /* GSTextFieldCell.m */; };
+		C2034DE91AA077F200AEA66D /* GSExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DD31AA077F200AEA66D /* GSExampleTableViewController.m */; };
+		C2034DEA1AA077F200AEA66D /* GSSearchTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DD41AA077F200AEA66D /* GSSearchTableViewViewController.m */; };
+		C2034DEB1AA077F200AEA66D /* GSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DD51AA077F200AEA66D /* GSTableViewController.m */; };
+		C2034DEC1AA077F200AEA66D /* GSTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DD61AA077F200AEA66D /* GSTableViewSection.m */; };
+		C2034DF01AA078A400AEA66D /* GSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DEF1AA078A400AEA66D /* GSImageView.m */; };
+		C2034DF71AA0798D00AEA66D /* GSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DF31AA0798D00AEA66D /* GSActionSheet.m */; };
+		C2034DF81AA0798D00AEA66D /* GSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DF61AA0798D00AEA66D /* GSAlertView.m */; };
+		C2034DFC1AA07B5400AEA66D /* MainExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DFB1AA07B5400AEA66D /* MainExampleViewController.m */; };
+		C2034DFF1AA07C4500AEA66D /* SearchExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034DFE1AA07C4500AEA66D /* SearchExampleViewController.m */; };
+		C2034E021AA0818400AEA66D /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E011AA0818400AEA66D /* SampleModel.m */; };
+		C2034E051AA085BD00AEA66D /* ModelDetailExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E041AA085BD00AEA66D /* ModelDetailExampleViewController.m */; };
+		C2034E081AA0884800AEA66D /* SampleModelWithDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2034DA01AA077BD00AEA66D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2034D7E1AA077BD00AEA66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2034D851AA077BD00AEA66D;
+			remoteInfo = GSTableViewLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2034D861AA077BD00AEA66D /* GSTableViewLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSTableViewLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2034D8A1AA077BD00AEA66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2034D8B1AA077BD00AEA66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2034D8D1AA077BD00AEA66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2034D8E1AA077BD00AEA66D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2034D901AA077BD00AEA66D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C2034D911AA077BD00AEA66D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2034D941AA077BD00AEA66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2034D961AA077BD00AEA66D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2034D991AA077BD00AEA66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C2034D9F1AA077BD00AEA66D /* GSTableViewLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSTableViewLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2034DA41AA077BD00AEA66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2034DA51AA077BD00AEA66D /* GSTableViewLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSTableViewLibTests.m; sourceTree = "<group>"; };
+		C2034DB11AA077F200AEA66D /* GSBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBaseCell.h; sourceTree = "<group>"; };
+		C2034DB21AA077F200AEA66D /* GSBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBaseCell.m; sourceTree = "<group>"; };
+		C2034DB31AA077F200AEA66D /* GSButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSButtonCell.h; sourceTree = "<group>"; };
+		C2034DB41AA077F200AEA66D /* GSButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSButtonCell.m; sourceTree = "<group>"; };
+		C2034DB51AA077F200AEA66D /* GSControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSControllerCell.h; sourceTree = "<group>"; };
+		C2034DB61AA077F200AEA66D /* GSControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSControllerCell.m; sourceTree = "<group>"; };
+		C2034DB71AA077F200AEA66D /* GSDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateCell.h; sourceTree = "<group>"; };
+		C2034DB81AA077F200AEA66D /* GSDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateCell.m; sourceTree = "<group>"; };
+		C2034DB91AA077F200AEA66D /* GSDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDetailCell.h; sourceTree = "<group>"; };
+		C2034DBA1AA077F200AEA66D /* GSDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDetailCell.m; sourceTree = "<group>"; };
+		C2034DBB1AA077F200AEA66D /* GSExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSExampleTableViewController.h; sourceTree = "<group>"; };
+		C2034DBC1AA077F200AEA66D /* GSFloatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFloatCell.h; sourceTree = "<group>"; };
+		C2034DBD1AA077F200AEA66D /* GSFloatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFloatCell.m; sourceTree = "<group>"; };
+		C2034DBE1AA077F200AEA66D /* GSLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLabelCell.h; sourceTree = "<group>"; };
+		C2034DBF1AA077F200AEA66D /* GSLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLabelCell.m; sourceTree = "<group>"; };
+		C2034DC01AA077F200AEA66D /* GSModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSModelCell.h; sourceTree = "<group>"; };
+		C2034DC11AA077F200AEA66D /* GSModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSModelCell.m; sourceTree = "<group>"; };
+		C2034DC21AA077F200AEA66D /* GSNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNumberCell.h; sourceTree = "<group>"; };
+		C2034DC31AA077F200AEA66D /* GSNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNumberCell.m; sourceTree = "<group>"; };
+		C2034DC41AA077F200AEA66D /* GSSearchTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSearchTableViewViewController.h; sourceTree = "<group>"; };
+		C2034DC51AA077F200AEA66D /* GSSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSelectCell.h; sourceTree = "<group>"; };
+		C2034DC61AA077F200AEA66D /* GSSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSelectCell.m; sourceTree = "<group>"; };
+		C2034DC71AA077F200AEA66D /* GSSelectModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSelectModelCell.h; sourceTree = "<group>"; };
+		C2034DC81AA077F200AEA66D /* GSSelectModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSelectModelCell.m; sourceTree = "<group>"; };
+		C2034DC91AA077F200AEA66D /* GSSteperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSteperCell.h; sourceTree = "<group>"; };
+		C2034DCA1AA077F200AEA66D /* GSSteperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSteperCell.m; sourceTree = "<group>"; };
+		C2034DCB1AA077F200AEA66D /* GSSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSwitchCell.h; sourceTree = "<group>"; };
+		C2034DCC1AA077F200AEA66D /* GSSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSwitchCell.m; sourceTree = "<group>"; };
+		C2034DCD1AA077F200AEA66D /* GSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewController.h; sourceTree = "<group>"; };
+		C2034DCE1AA077F200AEA66D /* GSTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTextCell.h; sourceTree = "<group>"; };
+		C2034DCF1AA077F200AEA66D /* GSTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTextCell.m; sourceTree = "<group>"; };
+		C2034DD01AA077F200AEA66D /* GSTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTextFieldCell.h; sourceTree = "<group>"; };
+		C2034DD11AA077F200AEA66D /* GSTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTextFieldCell.m; sourceTree = "<group>"; };
+		C2034DD31AA077F200AEA66D /* GSExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSExampleTableViewController.m; sourceTree = "<group>"; };
+		C2034DD41AA077F200AEA66D /* GSSearchTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSearchTableViewViewController.m; sourceTree = "<group>"; };
+		C2034DD51AA077F200AEA66D /* GSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewController.m; sourceTree = "<group>"; };
+		C2034DD61AA077F200AEA66D /* GSTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewSection.m; sourceTree = "<group>"; };
+		C2034DD71AA077F200AEA66D /* GSTableViewLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewLib.h; sourceTree = "<group>"; };
+		C2034DD91AA077F200AEA66D /* GSTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewSection.h; sourceTree = "<group>"; };
+		C2034DEE1AA078A400AEA66D /* GSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSImageView.h; sourceTree = "<group>"; };
+		C2034DEF1AA078A400AEA66D /* GSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSImageView.m; sourceTree = "<group>"; };
+		C2034DF21AA0798D00AEA66D /* GSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSActionSheet.h; sourceTree = "<group>"; };
+		C2034DF31AA0798D00AEA66D /* GSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSActionSheet.m; sourceTree = "<group>"; };
+		C2034DF51AA0798D00AEA66D /* GSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAlertView.h; sourceTree = "<group>"; };
+		C2034DF61AA0798D00AEA66D /* GSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAlertView.m; sourceTree = "<group>"; };
+		C2034DFA1AA07B5400AEA66D /* MainExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainExampleViewController.h; path = Examples/MainExampleViewController.h; sourceTree = "<group>"; };
+		C2034DFB1AA07B5400AEA66D /* MainExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainExampleViewController.m; path = Examples/MainExampleViewController.m; sourceTree = "<group>"; };
+		C2034DFD1AA07C4500AEA66D /* SearchExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchExampleViewController.h; path = Examples/SearchExampleViewController.h; sourceTree = "<group>"; };
+		C2034DFE1AA07C4500AEA66D /* SearchExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchExampleViewController.m; path = Examples/SearchExampleViewController.m; sourceTree = "<group>"; };
+		C2034E001AA0818400AEA66D /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = Examples/SampleModel.h; sourceTree = "<group>"; };
+		C2034E011AA0818400AEA66D /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = Examples/SampleModel.m; sourceTree = "<group>"; };
+		C2034E031AA085BD00AEA66D /* ModelDetailExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelDetailExampleViewController.h; path = Examples/ModelDetailExampleViewController.h; sourceTree = "<group>"; };
+		C2034E041AA085BD00AEA66D /* ModelDetailExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelDetailExampleViewController.m; path = Examples/ModelDetailExampleViewController.m; sourceTree = "<group>"; };
+		C2034E061AA0884800AEA66D /* SampleModelWithDetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModelWithDetailInfo.h; path = Examples/SampleModelWithDetailInfo.h; sourceTree = "<group>"; };
+		C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModelWithDetailInfo.m; path = Examples/SampleModelWithDetailInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2034D831AA077BD00AEA66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2034D9C1AA077BD00AEA66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2034D7D1AA077BD00AEA66D = {
+			isa = PBXGroup;
+			children = (
+				C2034D881AA077BD00AEA66D /* GSTableViewLib */,
+				C2034DA21AA077BD00AEA66D /* GSTableViewLibTests */,
+				C2034D871AA077BD00AEA66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2034D871AA077BD00AEA66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2034D861AA077BD00AEA66D /* GSTableViewLib.app */,
+				C2034D9F1AA077BD00AEA66D /* GSTableViewLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2034D881AA077BD00AEA66D /* GSTableViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				C2034D931AA077BD00AEA66D /* Main.storyboard */,
+				C2034D981AA077BD00AEA66D /* LaunchScreen.xib */,
+				C2034D8D1AA077BD00AEA66D /* AppDelegate.h */,
+				C2034D8E1AA077BD00AEA66D /* AppDelegate.m */,
+				C2034D901AA077BD00AEA66D /* ViewController.h */,
+				C2034D911AA077BD00AEA66D /* ViewController.m */,
+				C2034DF91AA07B3400AEA66D /* Examples */,
+				C2034DF11AA0798D00AEA66D /* GSActionSheet */,
+				C2034DF41AA0798D00AEA66D /* GSAlertView */,
+				C2034DAF1AA077F200AEA66D /* GSTableViewLib */,
+				C2034D891AA077BD00AEA66D /* Supporting Files */,
+			);
+			path = GSTableViewLib;
+			sourceTree = "<group>";
+		};
+		C2034D891AA077BD00AEA66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2034D961AA077BD00AEA66D /* Images.xcassets */,
+				C2034D8A1AA077BD00AEA66D /* Info.plist */,
+				C2034D8B1AA077BD00AEA66D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2034DA21AA077BD00AEA66D /* GSTableViewLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DA51AA077BD00AEA66D /* GSTableViewLibTests.m */,
+				C2034DA31AA077BD00AEA66D /* Supporting Files */,
+			);
+			path = GSTableViewLibTests;
+			sourceTree = "<group>";
+		};
+		C2034DA31AA077BD00AEA66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DA41AA077BD00AEA66D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2034DAF1AA077F200AEA66D /* GSTableViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DD71AA077F200AEA66D /* GSTableViewLib.h */,
+				C2034DED1AA078A400AEA66D /* Views */,
+				C2034DB01AA077F200AEA66D /* Cells */,
+				C2034DD21AA077F200AEA66D /* Controllers */,
+				C2034DD81AA077F200AEA66D /* Sections */,
+			);
+			path = GSTableViewLib;
+			sourceTree = "<group>";
+		};
+		C2034DB01AA077F200AEA66D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DB11AA077F200AEA66D /* GSBaseCell.h */,
+				C2034DB21AA077F200AEA66D /* GSBaseCell.m */,
+				C2034DB31AA077F200AEA66D /* GSButtonCell.h */,
+				C2034DB41AA077F200AEA66D /* GSButtonCell.m */,
+				C2034DB51AA077F200AEA66D /* GSControllerCell.h */,
+				C2034DB61AA077F200AEA66D /* GSControllerCell.m */,
+				C2034DB71AA077F200AEA66D /* GSDateCell.h */,
+				C2034DB81AA077F200AEA66D /* GSDateCell.m */,
+				C2034DB91AA077F200AEA66D /* GSDetailCell.h */,
+				C2034DBA1AA077F200AEA66D /* GSDetailCell.m */,
+				C2034DBB1AA077F200AEA66D /* GSExampleTableViewController.h */,
+				C2034DBC1AA077F200AEA66D /* GSFloatCell.h */,
+				C2034DBD1AA077F200AEA66D /* GSFloatCell.m */,
+				C2034DBE1AA077F200AEA66D /* GSLabelCell.h */,
+				C2034DBF1AA077F200AEA66D /* GSLabelCell.m */,
+				C2034DC01AA077F200AEA66D /* GSModelCell.h */,
+				C2034DC11AA077F200AEA66D /* GSModelCell.m */,
+				C2034DC21AA077F200AEA66D /* GSNumberCell.h */,
+				C2034DC31AA077F200AEA66D /* GSNumberCell.m */,
+				C2034DC41AA077F200AEA66D /* GSSearchTableViewViewController.h */,
+				C2034DC51AA077F200AEA66D /* GSSelectCell.h */,
+				C2034DC61AA077F200AEA66D /* GSSelectCell.m */,
+				C2034DC71AA077F200AEA66D /* GSSelectModelCell.h */,
+				C2034DC81AA077F200AEA66D /* GSSelectModelCell.m */,
+				C2034DC91AA077F200AEA66D /* GSSteperCell.h */,
+				C2034DCA1AA077F200AEA66D /* GSSteperCell.m */,
+				C2034DCB1AA077F200AEA66D /* GSSwitchCell.h */,
+				C2034DCC1AA077F200AEA66D /* GSSwitchCell.m */,
+				C2034DCD1AA077F200AEA66D /* GSTableViewController.h */,
+				C2034DCE1AA077F200AEA66D /* GSTextCell.h */,
+				C2034DCF1AA077F200AEA66D /* GSTextCell.m */,
+				C2034DD01AA077F200AEA66D /* GSTextFieldCell.h */,
+				C2034DD11AA077F200AEA66D /* GSTextFieldCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C2034DD21AA077F200AEA66D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DD31AA077F200AEA66D /* GSExampleTableViewController.m */,
+				C2034DD41AA077F200AEA66D /* GSSearchTableViewViewController.m */,
+				C2034DD51AA077F200AEA66D /* GSTableViewController.m */,
+				C2034DD61AA077F200AEA66D /* GSTableViewSection.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C2034DD81AA077F200AEA66D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DD91AA077F200AEA66D /* GSTableViewSection.h */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C2034DED1AA078A400AEA66D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DEE1AA078A400AEA66D /* GSImageView.h */,
+				C2034DEF1AA078A400AEA66D /* GSImageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2034DF11AA0798D00AEA66D /* GSActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DF21AA0798D00AEA66D /* GSActionSheet.h */,
+				C2034DF31AA0798D00AEA66D /* GSActionSheet.m */,
+			);
+			path = GSActionSheet;
+			sourceTree = "<group>";
+		};
+		C2034DF41AA0798D00AEA66D /* GSAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DF51AA0798D00AEA66D /* GSAlertView.h */,
+				C2034DF61AA0798D00AEA66D /* GSAlertView.m */,
+			);
+			path = GSAlertView;
+			sourceTree = "<group>";
+		};
+		C2034DF91AA07B3400AEA66D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				C2034DFA1AA07B5400AEA66D /* MainExampleViewController.h */,
+				C2034DFB1AA07B5400AEA66D /* MainExampleViewController.m */,
+				C2034DFD1AA07C4500AEA66D /* SearchExampleViewController.h */,
+				C2034DFE1AA07C4500AEA66D /* SearchExampleViewController.m */,
+				C2034E031AA085BD00AEA66D /* ModelDetailExampleViewController.h */,
+				C2034E041AA085BD00AEA66D /* ModelDetailExampleViewController.m */,
+				C2034E001AA0818400AEA66D /* SampleModel.h */,
+				C2034E011AA0818400AEA66D /* SampleModel.m */,
+				C2034E061AA0884800AEA66D /* SampleModelWithDetailInfo.h */,
+				C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2034D851AA077BD00AEA66D /* GSTableViewLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2034DA91AA077BD00AEA66D /* Build configuration list for PBXNativeTarget "GSTableViewLib" */;
+			buildPhases = (
+				C2034D821AA077BD00AEA66D /* Sources */,
+				C2034D831AA077BD00AEA66D /* Frameworks */,
+				C2034D841AA077BD00AEA66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSTableViewLib;
+			productName = GSTableViewLib;
+			productReference = C2034D861AA077BD00AEA66D /* GSTableViewLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2034D9E1AA077BD00AEA66D /* GSTableViewLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2034DAC1AA077BD00AEA66D /* Build configuration list for PBXNativeTarget "GSTableViewLibTests" */;
+			buildPhases = (
+				C2034D9B1AA077BD00AEA66D /* Sources */,
+				C2034D9C1AA077BD00AEA66D /* Frameworks */,
+				C2034D9D1AA077BD00AEA66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2034DA11AA077BD00AEA66D /* PBXTargetDependency */,
+			);
+			name = GSTableViewLibTests;
+			productName = GSTableViewLibTests;
+			productReference = C2034D9F1AA077BD00AEA66D /* GSTableViewLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2034D7E1AA077BD00AEA66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Gloobus Studio";
+				TargetAttributes = {
+					C2034D851AA077BD00AEA66D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C2034D9E1AA077BD00AEA66D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C2034D851AA077BD00AEA66D;
+					};
+				};
+			};
+			buildConfigurationList = C2034D811AA077BD00AEA66D /* Build configuration list for PBXProject "GSTableViewLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2034D7D1AA077BD00AEA66D;
+			productRefGroup = C2034D871AA077BD00AEA66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2034D851AA077BD00AEA66D /* GSTableViewLib */,
+				C2034D9E1AA077BD00AEA66D /* GSTableViewLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2034D841AA077BD00AEA66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2034D951AA077BD00AEA66D /* Main.storyboard in Resources */,
+				C2034D9A1AA077BD00AEA66D /* LaunchScreen.xib in Resources */,
+				C2034D971AA077BD00AEA66D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2034D9D1AA077BD00AEA66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2034D821AA077BD00AEA66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2034E081AA0884800AEA66D /* SampleModelWithDetailInfo.m in Sources */,
+				C2034DE31AA077F200AEA66D /* GSSelectCell.m in Sources */,
+				C2034DDD1AA077F200AEA66D /* GSDateCell.m in Sources */,
+				C2034DDB1AA077F200AEA66D /* GSButtonCell.m in Sources */,
+				C2034DE51AA077F200AEA66D /* GSSteperCell.m in Sources */,
+				C2034DE91AA077F200AEA66D /* GSExampleTableViewController.m in Sources */,
+				C2034DDA1AA077F200AEA66D /* GSBaseCell.m in Sources */,
+				C2034DEA1AA077F200AEA66D /* GSSearchTableViewViewController.m in Sources */,
+				C2034DE61AA077F200AEA66D /* GSSwitchCell.m in Sources */,
+				C2034DDF1AA077F200AEA66D /* GSFloatCell.m in Sources */,
+				C2034D921AA077BD00AEA66D /* ViewController.m in Sources */,
+				C2034DDC1AA077F200AEA66D /* GSControllerCell.m in Sources */,
+				C2034DFF1AA07C4500AEA66D /* SearchExampleViewController.m in Sources */,
+				C2034DF71AA0798D00AEA66D /* GSActionSheet.m in Sources */,
+				C2034DF01AA078A400AEA66D /* GSImageView.m in Sources */,
+				C2034DEC1AA077F200AEA66D /* GSTableViewSection.m in Sources */,
+				C2034DE01AA077F200AEA66D /* GSLabelCell.m in Sources */,
+				C2034DE11AA077F200AEA66D /* GSModelCell.m in Sources */,
+				C2034DFC1AA07B5400AEA66D /* MainExampleViewController.m in Sources */,
+				C2034DE21AA077F200AEA66D /* GSNumberCell.m in Sources */,
+				C2034E051AA085BD00AEA66D /* ModelDetailExampleViewController.m in Sources */,
+				C2034D8F1AA077BD00AEA66D /* AppDelegate.m in Sources */,
+				C2034DE41AA077F200AEA66D /* GSSelectModelCell.m in Sources */,
+				C2034DDE1AA077F200AEA66D /* GSDetailCell.m in Sources */,
+				C2034DEB1AA077F200AEA66D /* GSTableViewController.m in Sources */,
+				C2034DF81AA0798D00AEA66D /* GSAlertView.m in Sources */,
+				C2034DE81AA077F200AEA66D /* GSTextFieldCell.m in Sources */,
+				C2034D8C1AA077BD00AEA66D /* main.m in Sources */,
+				C2034DE71AA077F200AEA66D /* GSTextCell.m in Sources */,
+				C2034E021AA0818400AEA66D /* SampleModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2034D9B1AA077BD00AEA66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2034DA61AA077BD00AEA66D /* GSTableViewLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2034DA11AA077BD00AEA66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2034D851AA077BD00AEA66D /* GSTableViewLib */;
+			targetProxy = C2034DA01AA077BD00AEA66D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2034D931AA077BD00AEA66D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2034D941AA077BD00AEA66D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2034D981AA077BD00AEA66D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2034D991AA077BD00AEA66D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2034DA71AA077BD00AEA66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2034DA81AA077BD00AEA66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2034DAA1AA077BD00AEA66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSTableViewLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2034DAB1AA077BD00AEA66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSTableViewLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C2034DAD1AA077BD00AEA66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GSTableViewLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSTableViewLib.app/GSTableViewLib";
+			};
+			name = Debug;
+		};
+		C2034DAE1AA077BD00AEA66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GSTableViewLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSTableViewLib.app/GSTableViewLib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2034D811AA077BD00AEA66D /* Build configuration list for PBXProject "GSTableViewLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2034DA71AA077BD00AEA66D /* Debug */,
+				C2034DA81AA077BD00AEA66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2034DA91AA077BD00AEA66D /* Build configuration list for PBXNativeTarget "GSTableViewLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2034DAA1AA077BD00AEA66D /* Debug */,
+				C2034DAB1AA077BD00AEA66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C2034DAC1AA077BD00AEA66D /* Build configuration list for PBXNativeTarget "GSTableViewLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2034DAD1AA077BD00AEA66D /* Debug */,
+				C2034DAE1AA077BD00AEA66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2034D7E1AA077BD00AEA66D /* Project object */;
+}
