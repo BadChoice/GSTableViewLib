@@ -38,6 +38,11 @@ replacementString:(NSString*)string {
     double minorUnitsPerMajor = pow(10, self.maximumFractionDigits);
     NSString* newString = [NSString stringWithFormat:format, currentValue/minorUnitsPerMajor];
     textField.text = newString;
+    
+    [super didChange];
+    
     return NO;  
 }
+
+
 @end

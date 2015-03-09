@@ -14,5 +14,6 @@
 
 @property (strong,nonatomic) UITextField* textField;
 
+-(void)didChange;
 
 @end
