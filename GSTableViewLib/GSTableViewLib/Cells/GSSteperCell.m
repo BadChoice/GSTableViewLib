@@ -16,7 +16,7 @@
     mAllowZero = NO;
     
     _stepper =[[UIStepper alloc] initWithFrame:CGRectMake(TEXT_X + CONTROL_SIZE ,TEXT_Y,60,15)];
-    [self addSubview:_stepper];
+    [self.contentView addSubview:_stepper];
     
     [_stepper addTarget:self action:@selector(didChangeStepper) forControlEvents:UIControlEventValueChanged];
     self.textField.placeholder = @"";

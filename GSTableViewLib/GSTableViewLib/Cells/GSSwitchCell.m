@@ -15,7 +15,7 @@
     
     _theSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.frame.size.width - 80, TEXT_Y, CONTROL_SIZE, 25)];
     [_theSwitch setFrame:CGRectMake(self.frame.size.width - _theSwitch.frame.size.width, 6, self.frame.size.width, 25)];
-    [self addSubview:_theSwitch];
+    [self.contentView addSubview:_theSwitch];
     
    	[_theSwitch addTarget:self action:@selector(didChange) forControlEvents:UIControlEventValueChanged];
 }

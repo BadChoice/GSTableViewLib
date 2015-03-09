@@ -8,6 +8,12 @@
 
 #import "GSTextFieldCell.h"
 
-@interface GSFloatCell : GSTextFieldCell
+#define MAX_LENGTH 8
+
+@interface GSFloatCell : GSTextFieldCell <UITextFieldDelegate>{
+}
+
+@property (nonatomic)           NSUInteger maximumFractionDigits;
+@property (strong,nonatomic)    NSString *decimalSeparator;
 
 @end

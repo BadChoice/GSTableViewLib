@@ -18,7 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
     
-    [[UIView appearance] setTintColor:[UIColor greenColor]];
+    [[UIView appearance]   setTintColor:[UIColor redColor]];
+    [[UISwitch appearance] setOnTintColor:[UIColor redColor]];
+    [[UIButton appearance] setTintColor:[UIColor redColor]];
     
    
 	return YES;
