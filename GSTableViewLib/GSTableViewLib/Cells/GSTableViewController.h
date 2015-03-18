@@ -35,6 +35,8 @@ typedef NSUInteger GSCellType;
  
 }
 
+
+
 @property (weak,nonatomic) id<GSTableViewControllerDelegate> gsDelegate;
 
 @property (strong,nonatomic) NSMutableArray* sections;

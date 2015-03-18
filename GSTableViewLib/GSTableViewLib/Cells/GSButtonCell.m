@@ -16,15 +16,11 @@
     return cell;
 }
 
--(void)setup{
-    [super setup];
-    UIColor *tintColor  = [self tintColor];
-    UIColor *tintColor2 = [[UIButton appearance] tintColor];
-    
-    UIButton* bt = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 200, 25)];
-    [bt setTitle:@"Helloooaoao" forState:UIControlStateNormal];
-    [self addSubview:bt];
-    [self.text setTextColor:bt.tintColor];
+-(void)layoutSubviews{
+	UIColor *tintColor2 = [[UIButton appearance] tintColor];
+	[self.text setTextColor:tintColor2];
+	
+	[super layoutSubviews];
 }
 
 -(void)onCellPressed:(UITableView*)tableView indexPath:(NSIndexPath*)index controller:(UIViewController*)controller{
