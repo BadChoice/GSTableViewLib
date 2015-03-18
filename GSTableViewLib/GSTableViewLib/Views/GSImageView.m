@@ -79,6 +79,9 @@
                 }
             });
         }
+		else{
+			[self.initialsLabel setHidden:YES];
+		}
     }
     else{
         self.image = nil;
