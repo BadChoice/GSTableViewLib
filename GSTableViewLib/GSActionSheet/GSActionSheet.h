@@ -13,5 +13,5 @@
 @property (copy) void(^completionBlock)(UIActionSheet *alertView, NSInteger buttonIndex);
 
 - (void)showInView:(UIView *)view withCompletion:(void(^)(UIActionSheet *alertView, NSInteger buttonIndex))completion;
-
+-(void)changeTextColor:(UIColor*)color;
 @end
