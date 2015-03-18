@@ -15,13 +15,13 @@
     
     mAllowZero = NO;
     
-    _stepper =[[UIStepper alloc] initWithFrame:CGRectMake(TEXT_X + CONTROL_SIZE ,TEXT_Y,60,15)];
-    [self.contentView addSubview:_stepper];
-    
+    _stepper = [[UIStepper alloc] initWithFrame:CGRectMake(TEXT_X + CONTROL_SIZE ,TEXT_Y,60,15)];
+	[self.contentView addSubview:_stepper];
+	
     [_stepper addTarget:self action:@selector(didChangeStepper) forControlEvents:UIControlEventValueChanged];
-    self.textField.placeholder = @"";
-    self.textField.text = @"1";
-    self.stepper.value  = 1;
+    self.textField.placeholder	= @"";
+    self.textField.text			= @"1";
+    self.stepper.value			= 1;
 
     if(!mAllowZero) self.stepper.minimumValue = 1;
     
@@ -31,6 +31,7 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     [_stepper setFrame:CGRectMake(self.frame.size.width - 130 - ACCESSORY_WIDTH, TEXT_Y, CONTROL_SIZE, 25)];
+	[self.textField setFrame:CGRectMake(self.frame.size.width - 70, TEXT_Y, 40, 25)];
 }
 
 -(void)didChangeStepper{
