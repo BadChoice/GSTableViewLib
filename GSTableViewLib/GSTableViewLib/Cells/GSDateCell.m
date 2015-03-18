@@ -33,14 +33,43 @@
     [self didChange];
 }
 
-
+//==========================================================================
+#pragma mark - SHOW/HIDE
+#pragma mark -
+//==========================================================================
 -(void)onCellPressed:(UITableView*)tableView indexPath:(NSIndexPath*)index controller:(UIViewController*)controller{
     isVisible = !isVisible;
-    [UIView animateWithDuration:0.3 animations:^{
-        [tableView reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationFade];
-		[tableView reloadData];
-    }];
+	if(isVisible) [self showDatePickerCell:tableView];
+	else		  [self hideDatePickerCell:tableView];
 }
+
+- (void)showDatePickerCell:(UITableView*)tableview {
+ 
+	[tableview beginUpdates];
+	[tableview endUpdates];
+ 
+	self.datePicker.hidden = NO;
+	self.datePicker.alpha = 0.0f;
+ 
+	[UIView animateWithDuration:0.25 animations:^{
+		self.datePicker.alpha = 1.0f;
+	}];
+}
+
+- (void)hideDatePickerCell:(UITableView*)tableview  {
+	
+	[tableview beginUpdates];
+	[tableview endUpdates];
+ 
+	[UIView animateWithDuration:0.25
+					 animations:^{
+						 self.datePicker.alpha = 0.0f;
+					 }
+					 completion:^(BOOL finished){
+						 self.datePicker.hidden = YES;
+					 }];
+}
+
 
 -(CGFloat)cellHeight{
     if(isVisible)
@@ -49,6 +78,10 @@
         return [super cellHeight];
 }
 
+//==========================================================================
+#pragma mark - did change
+#pragma mark -
+//==========================================================================
 -(void)didChange{
 	if(self.label != nil){
 		self.label.text = [format stringFromDate:[_datePicker date]];

@@ -34,7 +34,7 @@ replacementString:(NSString*)string {
                                       options:NSLiteralSearch range:NSMakeRange(0, [currentString length])];
     // Generate a new string for the text input
     int currentValue = [currentString intValue];
-    NSString* format = [NSString stringWithFormat:@"%%.%df", self.maximumFractionDigits];
+    NSString* format = [NSString stringWithFormat:@"%%.%luf", (unsigned long)self.maximumFractionDigits];
     double minorUnitsPerMajor = pow(10, self.maximumFractionDigits);
     NSString* newString = [NSString stringWithFormat:format, currentValue/minorUnitsPerMajor];
     textField.text = newString;
