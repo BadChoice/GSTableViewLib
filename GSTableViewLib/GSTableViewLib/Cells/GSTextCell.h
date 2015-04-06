@@ -8,7 +8,11 @@
 
 #import "GSBaseCell.h"
 
-@interface GSTextCell : GSBaseCell<UITextViewDelegate>
+#define TEXT_VIEW_LINE_HEIGHT 25
+
+@interface GSTextCell : GSBaseCell<UITextViewDelegate>{
+    int mNumberOfLines;
+}
 
 @property (strong,nonatomic) UITextView* textView;
 

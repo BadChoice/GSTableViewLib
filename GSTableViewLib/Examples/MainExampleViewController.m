@@ -70,7 +70,10 @@
 												  andObject:self.sampleModel
 													 andKey:@"date"
 											  andPickerMode:UIDatePickerModeDateAndTime]];
-	
+    
+    [firstSection addCell:[GSTextCell	cellWithText:@"Large text"
+                                          andObject:self.sampleModel
+                                             andKey:@"largeText"]];
 	
 	[firstSection addCell:[GSButtonCell     cellWithText:@"Button" andAction:^{
 		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"

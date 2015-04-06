@@ -76,7 +76,9 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return ((GSTableViewSection*)_sections[indexPath.section]).cells[indexPath.row];
+    GSBaseCell* cell     = ((GSTableViewSection*)_sections[indexPath.section]).cells[indexPath.row];
+    cell.parentTableview = tableView;
+    return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

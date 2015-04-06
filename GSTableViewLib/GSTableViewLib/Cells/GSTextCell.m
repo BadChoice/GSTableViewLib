@@ -12,11 +12,14 @@
 
 -(void)setup{
     [super setup];
-    _textView = [[UITextView alloc] initWithFrame:CGRectMake(TEXT_X + 100 ,TEXT_Y ,CONTROL_SIZE + 80,120)];
+    mNumberOfLines = 1;
+    _textView = [[UITextView alloc] initWithFrame:[self getFrame]];
     [_textView setTextColor:[UIColor grayColor]];
     [_textView setFont:[UIFont systemFontOfSize:15]];
     
     [self addSubview:_textView];
+    
+    [_textView setText:@"a text"];
     
     self.clipsToBounds = YES;
     
@@ -42,15 +45,31 @@
     [self didChange];
 }
 
+-(void)textViewDidChange:(UITextView *)textView{
+    [self didChange];
+}
+
 -(void)didChange{
     [self updateModelObject:_textView.text];
+    
+    int lines  = self.textView.contentSize.height/self.textView.font.lineHeight;
+    if(lines != mNumberOfLines){
+        mNumberOfLines = lines;
+        [self.textView setFrame:[self getFrame]];
+        [self.parentTableview beginUpdates];
+        [self.parentTableview endUpdates];
+    }
 }
 
 
 -(CGFloat)cellHeight{
-    return 150;
+    return 65 + (TEXT_VIEW_LINE_HEIGHT*mNumberOfLines) - (10*mNumberOfLines);
 }
 
+
+-(CGRect)getFrame{
+    return CGRectMake(8 ,TEXT_Y*2.6f ,self.frame.size.width - 10,TEXT_VIEW_LINE_HEIGHT*mNumberOfLines);
+}
 
 
 @end

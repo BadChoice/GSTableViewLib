@@ -18,6 +18,7 @@
 @property (strong,nonatomic) NSDate	 * date;
 @property (strong,nonatomic) NSString* select;
 @property (strong,nonatomic) NSNumber* selectId;
+@property (strong,nonatomic) NSString* largeText;
 
 -(void)setExampleDataToProperties;
 

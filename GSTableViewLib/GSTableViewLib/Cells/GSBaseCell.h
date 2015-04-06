@@ -31,6 +31,8 @@
 
 @property (nonatomic) BOOL                  isEditable;
 
+@property (nonatomic,weak) UITableView*     parentTableview;
+
 
 
 //Constructors
