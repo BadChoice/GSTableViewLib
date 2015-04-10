@@ -44,11 +44,13 @@
 
 -(void)didChange{
     [self updateModelObject:_textField.text];
-	[self updateValid];
 }
 
 -(BOOL)checkValid{
-	return !(self.isRequired && [self.textField.text isEqual:@""]);
+	if(self.validator != nil){
+		return [self.validator isValid:self.textField.text];
+	}
+	else return YES;
 }
 
 @end

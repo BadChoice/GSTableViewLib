@@ -59,7 +59,6 @@
 }
 
 
-
 -(void)setup{
     
     self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -85,6 +84,7 @@
     else{
         [_text setFrame:CGRectMake(TEXT_X                   , TEXT_Y, CONTROL_SIZE, 25)];
     }
+	[self updateValid];
 }
 
 -(void)onCellPressed:(UITableView*)tableView indexPath:(NSIndexPath*)index controller:(UIViewController*)controller{
@@ -94,6 +94,8 @@
 -(void)updateModelObject:(id)value{
     if(_object != nil)
         [_object setValue:value forKey:_objectProperty];
+	
+	[self updateValid];
 }
 
 - (BOOL) isIntegerNumber: (NSString*)input
@@ -127,6 +129,28 @@
 -(void)setInvalidColor{
 	[self setBackgroundColor:[UIColor yellowColor]];
 	isValid = false;
+}
+
+//================================================
+#pragma mark - SETS
+//================================================
+-(void)setIsRequired:(BOOL)isRequired{
+	_isRequired = isRequired;
+	if(self.validator == nil){
+		self.validator = [[GSValidator alloc] init];
+	}
+	GSValidatorRequired* requiredValidator = [[GSValidatorRequired alloc] init];
+	if(_isRequired){
+		if(![self.validator.validations containsObject:requiredValidator]){
+			[self.validator.validations addObject:requiredValidator];
+		}
+	}
+	else{
+		if([self.validator.validations containsObject:requiredValidator]){
+			[self.validator.validations removeObject:requiredValidator];
+		}
+	}
+	[self updateValid];
 }
 
 //================================================

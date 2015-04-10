@@ -75,6 +75,12 @@
                                           andObject:self.sampleModel
                                              andKey:@"largeText"]];
 	
+	
+	[firstSection addCell:[GSTextFieldCell  cellWithText:@"Required and Email"]];
+	((GSTextFieldCell*)[firstSection.cells lastObject]).isRequired = YES;
+	[((GSTextFieldCell*)[firstSection.cells lastObject]).validator addValidation:[[GSValidatorEmail alloc] init] ];
+	
+	
 	[firstSection addCell:[GSButtonCell     cellWithText:@"Button" andAction:^{
 		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"
 														message:@"A button has been pressed"
@@ -86,6 +92,9 @@
 		}];
 		
 	}]];
+	
+
+
 	
 	//-------------------------------------------
 	// SELECT CELLS

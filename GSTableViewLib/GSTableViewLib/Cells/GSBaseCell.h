@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "GSImageView.h"
+#import "GSValidatorEmail.h"
+#import "GSValidatorRequired.h"
 
 #define TEXT_Y 15
 #define TEXT_X 12
@@ -28,10 +30,12 @@
 @property (strong,nonatomic) NSString       *objectProperty;
 
 @property (nonatomic)   BOOL                isRequired;
+@property (strong,nonatomic) GSValidator*	validator;
 
 @property (nonatomic) BOOL                  isEditable;
 
 @property (nonatomic,weak) UITableView*     parentTableview;
+
 
 
 
