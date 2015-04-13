@@ -103,8 +103,8 @@
 			NSObject* objectValue = [self.object valueForKey:self.objectProperty];
 			NSString* stringToCompare;
 			
-			if(self.keyIsNumber){	stringToCompare = ((NSString*)objectValue);					}
-			else				{   stringToCompare = [((NSNumber*)objectValue) stringValue];	}
+			if(self.keyIsNumber){	stringToCompare = ([(NSNumber*)objectValue stringValue]);	}
+			else				{   stringToCompare = ((NSString*)objectValue);					}
 			
 			if([dictKey isEqual:stringToCompare]){
 				[cell setAccessoryType:UITableViewCellAccessoryCheckmark];
