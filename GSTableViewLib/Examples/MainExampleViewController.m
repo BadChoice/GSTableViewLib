@@ -93,6 +93,18 @@
 		
 	}]];
 	
+	[firstSection addCell:[GSButtonCell     cellWithText:@"Big Button" andColor:[UIColor greenColor] andAction:^{
+		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"
+														message:@"A button has been pressed"
+													   delegate:nil
+											  cancelButtonTitle:@"Ok"
+											  otherButtonTitles:nil];
+		[alert showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
+			NSLog(@"alert closed");
+		}];
+		
+	}]];
+	
 
 
 	

@@ -9,10 +9,15 @@
 #import "GSBaseCell.h"
 
 @interface GSButtonCell : GSBaseCell{
-
+	
 }
 
 @property(nonatomic,copy) void (^action)(void);
+@property(strong,nonatomic) UIColor* bgColor;
+@property(strong,nonatomic) UIColor* textColor;
+
 +(id)cellWithText:(NSString*)text andAction:(void (^)())action;
++(id)cellWithText:(NSString *)text andColor:(UIColor*)color andAction:(void (^)())action;
++(id)cellWithText:(NSString *)text andColor:(UIColor*)color andTextColor:(UIColor*)textColor andAction:(void (^)())action;
 
 @end
