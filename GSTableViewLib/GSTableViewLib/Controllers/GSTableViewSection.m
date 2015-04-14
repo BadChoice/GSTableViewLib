@@ -112,6 +112,16 @@
     return section;
 }
 
++(GSTableViewSection*)createSectionForArray:(NSArray*)modelArray{
+	GSTableViewSection* section = [[GSTableViewSection alloc] init];
+	for(NSString *text in modelArray){
+		GSBaseCell* cell;
+		cell = [GSLabelCell cellWithText:text];
+		[section addCell:cell];
+	}
+	return section;
+}
+
 +(GSTableViewSection*)createSectionFromDefinition:(NSArray*)definitions{
     GSTableViewSection* section = [[GSTableViewSection alloc] init];
     

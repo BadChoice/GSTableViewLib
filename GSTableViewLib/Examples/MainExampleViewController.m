@@ -105,6 +105,8 @@
 		
 	}]];
 	
+	[firstSection addCell:[GSDescriptionCell cellWithText:@"This is a very long description text and now it is even longer and longer and longer and longer... " withClearColor:YES]];
+	
 
 
 	
