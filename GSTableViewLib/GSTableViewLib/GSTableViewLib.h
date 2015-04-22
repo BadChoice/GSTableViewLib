@@ -29,5 +29,7 @@
 #import "GSSteperCell.h"
 #import "GSTextCell.h"
 #import "GSDetailCell.h"
+#import "GSDescriptionCell.h"
+
 
 #endif

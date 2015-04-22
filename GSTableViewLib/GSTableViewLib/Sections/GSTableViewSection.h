@@ -20,6 +20,7 @@
 +(GSTableViewSection*)createSectionForModel:(Class)class andObject:(NSObject*)object;
 +(GSTableViewSection*)createSectionForModelArray:(NSArray*)modelArray withDetail:(BOOL)withDetail ofObject:(Class)class;
 +(GSTableViewSection*)createSectionForModelArray:(NSArray*)modelArray withDetail:(BOOL)withDetail ofObject:(Class)class withNullText:(NSString *)nullText;
++(GSTableViewSection*)createSectionForArray:(NSArray*)modelArray;
 +(GSTableViewSection*)createSectionFromDefinition:(NSArray*)definitions;
 
 -(void)addCell:(GSBaseCell*)cell;

@@ -71,7 +71,10 @@
                         self.image = nil;
                         return;
                     }
-                    dispatch_async(dispatch_get_main_queue(), ^{
+					
+					[self.initialsLabel setHidden:YES];
+					
+					dispatch_async(dispatch_get_main_queue(), ^{
                         if(loadToken == mCurrentLoad)
                             self.image = [UIImage imageWithData: data];
                         [self saveToDisk:imagePath];

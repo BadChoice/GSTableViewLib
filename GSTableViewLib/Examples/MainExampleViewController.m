@@ -75,6 +75,12 @@
                                           andObject:self.sampleModel
                                              andKey:@"largeText"]];
 	
+	
+	[firstSection addCell:[GSTextFieldCell  cellWithText:@"Required and Email"]];
+	((GSTextFieldCell*)[firstSection.cells lastObject]).isRequired = YES;
+	[((GSTextFieldCell*)[firstSection.cells lastObject]).validator addValidation:[[GSValidatorEmail alloc] init] ];
+	
+	
 	[firstSection addCell:[GSButtonCell     cellWithText:@"Button" andAction:^{
 		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"
 														message:@"A button has been pressed"
@@ -86,6 +92,23 @@
 		}];
 		
 	}]];
+	
+	[firstSection addCell:[GSButtonCell     cellWithText:@"Big Button" andColor:[UIColor greenColor] andAction:^{
+		GSAlertView* alert = [[GSAlertView alloc] initWithTitle:@"Button pressed"
+														message:@"A button has been pressed"
+													   delegate:nil
+											  cancelButtonTitle:@"Ok"
+											  otherButtonTitles:nil];
+		[alert showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
+			NSLog(@"alert closed");
+		}];
+		
+	}]];
+	
+	[firstSection addCell:[GSDescriptionCell cellWithText:@"This is a very long description text and now it is even longer and longer and longer and longer... " withClearColor:YES]];
+	
+
+
 	
 	//-------------------------------------------
 	// SELECT CELLS

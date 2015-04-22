@@ -10,7 +10,7 @@
 #import "SampleModelWithDetailInfo.h"
 
 @interface MainExampleViewController : GSTableViewController{
-	
+
 }
 
 @property (strong,nonatomic) SampleModel* sampleModel;

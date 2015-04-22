@@ -44,6 +44,10 @@
 		C2034E0A1AA08DF700AEA66D /* GSTableViewLib.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = C2034E091AA08DF700AEA66D /* GSTableViewLib.podspec.json */; };
 		C2034E0C1AA0914900AEA66D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C2034E0B1AA0914900AEA66D /* README.md */; };
 		C2034E0F1AA0936800AEA66D /* GSSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2034E0E1AA0936800AEA66D /* GSSegmentedCell.m */; };
+		C25366321ADD161E008025D8 /* GSDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C25366311ADD161E008025D8 /* GSDescriptionCell.m */; };
+		C2664A2A1AD7F0DF00761459 /* GSValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C2664A291AD7F0DF00761459 /* GSValidator.m */; };
+		C2664A2E1AD7F1F000761459 /* GSValidatorEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = C2664A2D1AD7F1F000761459 /* GSValidatorEmail.m */; };
+		C2664A321AD7F36100761459 /* GSValidatorRequired.m in Sources */ = {isa = PBXBuildFile; fileRef = C2664A311AD7F36100761459 /* GSValidatorRequired.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +133,14 @@
 		C2034E0B1AA0914900AEA66D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C2034E0D1AA0936800AEA66D /* GSSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSegmentedCell.h; sourceTree = "<group>"; };
 		C2034E0E1AA0936800AEA66D /* GSSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSegmentedCell.m; sourceTree = "<group>"; };
+		C25366301ADD161E008025D8 /* GSDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDescriptionCell.h; sourceTree = "<group>"; };
+		C25366311ADD161E008025D8 /* GSDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDescriptionCell.m; sourceTree = "<group>"; };
+		C2664A281AD7F0DF00761459 /* GSValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSValidator.h; path = Validator/GSValidator.h; sourceTree = "<group>"; };
+		C2664A291AD7F0DF00761459 /* GSValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSValidator.m; path = Validator/GSValidator.m; sourceTree = "<group>"; };
+		C2664A2C1AD7F1F000761459 /* GSValidatorEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSValidatorEmail.h; path = Validator/GSValidatorEmail/GSValidatorEmail.h; sourceTree = "<group>"; };
+		C2664A2D1AD7F1F000761459 /* GSValidatorEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSValidatorEmail.m; path = Validator/GSValidatorEmail/GSValidatorEmail.m; sourceTree = "<group>"; };
+		C2664A301AD7F36100761459 /* GSValidatorRequired.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSValidatorRequired.h; path = Validator/GSValidatorRequired/GSValidatorRequired.h; sourceTree = "<group>"; };
+		C2664A311AD7F36100761459 /* GSValidatorRequired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSValidatorRequired.m; path = Validator/GSValidatorRequired/GSValidatorRequired.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +234,7 @@
 				C2034DB01AA077F200AEA66D /* Cells */,
 				C2034DD21AA077F200AEA66D /* Controllers */,
 				C2034DD81AA077F200AEA66D /* Sections */,
+				C2664A271AD7F0BC00761459 /* Validators */,
 			);
 			path = GSTableViewLib;
 			sourceTree = "<group>";
@@ -264,6 +277,8 @@
 				C2034DCF1AA077F200AEA66D /* GSTextCell.m */,
 				C2034DD01AA077F200AEA66D /* GSTextFieldCell.h */,
 				C2034DD11AA077F200AEA66D /* GSTextFieldCell.m */,
+				C25366301ADD161E008025D8 /* GSDescriptionCell.h */,
+				C25366311ADD161E008025D8 /* GSDescriptionCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -329,6 +344,35 @@
 				C2034E071AA0884800AEA66D /* SampleModelWithDetailInfo.m */,
 			);
 			name = Examples;
+			sourceTree = "<group>";
+		};
+		C2664A271AD7F0BC00761459 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				C2664A2F1AD7F34800761459 /* GSValidatorRequired */,
+				C2664A2B1AD7F13200761459 /* GSValidatorEmail */,
+				C2664A281AD7F0DF00761459 /* GSValidator.h */,
+				C2664A291AD7F0DF00761459 /* GSValidator.m */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		C2664A2B1AD7F13200761459 /* GSValidatorEmail */ = {
+			isa = PBXGroup;
+			children = (
+				C2664A2C1AD7F1F000761459 /* GSValidatorEmail.h */,
+				C2664A2D1AD7F1F000761459 /* GSValidatorEmail.m */,
+			);
+			name = GSValidatorEmail;
+			sourceTree = "<group>";
+		};
+		C2664A2F1AD7F34800761459 /* GSValidatorRequired */ = {
+			isa = PBXGroup;
+			children = (
+				C2664A301AD7F36100761459 /* GSValidatorRequired.h */,
+				C2664A311AD7F36100761459 /* GSValidatorRequired.m */,
+			);
+			name = GSValidatorRequired;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +478,7 @@
 			files = (
 				C2034E081AA0884800AEA66D /* SampleModelWithDetailInfo.m in Sources */,
 				C2034DE31AA077F200AEA66D /* GSSelectCell.m in Sources */,
+				C2664A321AD7F36100761459 /* GSValidatorRequired.m in Sources */,
 				C2034E0F1AA0936800AEA66D /* GSSegmentedCell.m in Sources */,
 				C2034DDD1AA077F200AEA66D /* GSDateCell.m in Sources */,
 				C2034DDB1AA077F200AEA66D /* GSButtonCell.m in Sources */,
@@ -445,7 +490,10 @@
 				C2034DE61AA077F200AEA66D /* GSSwitchCell.m in Sources */,
 				C2034DDF1AA077F200AEA66D /* GSFloatCell.m in Sources */,
 				C2034D921AA077BD00AEA66D /* ViewController.m in Sources */,
+				C2664A2E1AD7F1F000761459 /* GSValidatorEmail.m in Sources */,
 				C2034DDC1AA077F200AEA66D /* GSControllerCell.m in Sources */,
+				C25366321ADD161E008025D8 /* GSDescriptionCell.m in Sources */,
+				C2664A2A1AD7F0DF00761459 /* GSValidator.m in Sources */,
 				C2034DFF1AA07C4500AEA66D /* SearchExampleViewController.m in Sources */,
 				C2034DF71AA0798D00AEA66D /* GSActionSheet.m in Sources */,
 				C2034DF01AA078A400AEA66D /* GSImageView.m in Sources */,
