@@ -63,7 +63,7 @@
 
 
 -(CGFloat)cellHeight{
-    return 65 + (TEXT_VIEW_LINE_HEIGHT*mNumberOfLines) - (10*mNumberOfLines);
+    return 65 + (TEXT_VIEW_LINE_HEIGHT*mNumberOfLines) - (8*mNumberOfLines);
 }
 
 
