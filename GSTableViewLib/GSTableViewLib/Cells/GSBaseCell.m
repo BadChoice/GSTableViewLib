@@ -97,7 +97,7 @@
 	
 	[self updateValid];
     
-    if[(self.delegate) self.delegate onValueChanged:self];
+    if(self.delegate) [self.delegate onValueChanged:self];
 }
 
 - (BOOL) isIntegerNumber: (NSString*)input
