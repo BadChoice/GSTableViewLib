@@ -96,6 +96,8 @@
         [_object setValue:value forKey:_objectProperty];
 	
 	[self updateValid];
+    
+    if[(self.delegate) self.delegate onValueChanged:self];
 }
 
 - (BOOL) isIntegerNumber: (NSString*)input

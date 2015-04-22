@@ -17,6 +17,12 @@
 #define IMAGE_SIZE 40
 #define ACCESSORY_WIDTH 30
 
+
+@protocol GSCellDelegate <NSObject>
+-(void)onValueChanged:(id)cell;
+@end
+
+
 @interface GSBaseCell : UITableViewCell{
 
     BOOL isValid;
@@ -37,6 +43,7 @@
 @property (nonatomic,weak) UITableView*     parentTableview;
 
 
+@property (weak,nonatomic) id<GSCellDelegate>  delegate;
 
 
 //Constructors
