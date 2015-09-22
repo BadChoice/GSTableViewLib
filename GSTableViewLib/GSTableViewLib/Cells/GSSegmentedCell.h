@@ -8,20 +8,17 @@
 
 #import "GSButtonCell.h"
 
-@protocol GSSegmentedCellDelegate <NSObject>
-
-- (void) valueChanged:(int) value;
-
-@end
-
-
 
 @interface GSSegmentedCell : GSButtonCell {
-	UISegmentedControl *segmentedControl;
 }
 
-@property(nonatomic,strong) id <GSSegmentedCellDelegate> delegate;
+@property(strong,nonatomic)	UISegmentedControl *segmentedControl;
 
-- (void) setSegmentedIndex:(int) selected;
+
+@property(strong,nonatomic) NSArray* labels;
+@property(strong,nonatomic) NSArray* values;
+
++(id)cellWithText:(NSString*)text  andObject:(id)object andKey:(NSString*)key  andLabels:(NSArray*)labels andValues:(NSArray*)values;
+
 
 @end

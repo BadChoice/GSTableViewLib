@@ -74,6 +74,12 @@
     [firstSection addCell:[GSTextCell	cellWithText:@"Large text"
                                           andObject:self.sampleModel
                                              andKey:@"largeText"]];
+    
+    [firstSection addCell:[GSSegmentedCell cellWithText:@"State"
+                                              andObject:self.sampleModel
+                                                 andKey:@"segmented"
+                                              andLabels:@[@"a",@"b",@"c"]
+                                              andValues:@[@1,@2,@6] ]];
 	
 	
 	[firstSection addCell:[GSTextFieldCell  cellWithText:@"Required and Email"]];

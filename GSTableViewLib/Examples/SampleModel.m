@@ -28,6 +28,8 @@
 	self.decimalNumber	= @5.3;
 	self.select			= @"Amazing";
 	self.selectId		= @1;
+    self.segmented		= @1;
+
 }
 
 +(NSArray*)createModelsArray{
@@ -44,7 +46,7 @@
     [data[1] setValue:@"Milk"			forKey:@"name"];
     [data[2] setValue:@"Tea"			forKey:@"name"];
     [data[3] setValue:@"Football"		forKey:@"name"];
-    [data[4] setValue:@"Basketball"	forKey:@"name"];
+    [data[4] setValue:@"Basketball"     forKey:@"name"];
     [data[5] setValue:@"Hamburger"		forKey:@"name"];
 
     return data;

@@ -19,6 +19,7 @@
 @property (strong,nonatomic) NSString* select;
 @property (strong,nonatomic) NSNumber* selectId;
 @property (strong,nonatomic) NSString* largeText;
+@property (strong,nonatomic) NSNumber* segmented;
 
 -(void)setExampleDataToProperties;
 
