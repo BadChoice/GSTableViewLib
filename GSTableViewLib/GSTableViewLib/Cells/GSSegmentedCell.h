@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 idesuku. All rights reserved.
 //
 
-#import "GSButtonCell.h"
+#import "GSBaseCell.h"
 
 
-@interface GSSegmentedCell : GSButtonCell {
+@interface GSSegmentedCell : GSBaseCell {
 }
 
 @property(strong,nonatomic)	UISegmentedControl *segmentedControl;

@@ -65,7 +65,13 @@
 	[firstSection addCell:[GSSteperCell		cellWithText:@"Stepper"
 													andObject:self.sampleModel
 													   andKey:@"stepper"]];
-	
+    
+    [firstSection addCell:[GSSegmentedCell cellWithText:@"State"
+                                              andObject:self.sampleModel
+                                                 andKey:@"segmented"
+                                              andLabels:@[@"a",@"b",@"c"]
+                                              andValues:@[@1,@2,@6] ]];
+    
 	[firstSection addCell:[GSDateCell		cellWithText:@"Date"
 												  andObject:self.sampleModel
 													 andKey:@"date"
@@ -75,11 +81,7 @@
                                           andObject:self.sampleModel
                                              andKey:@"largeText"]];
     
-    [firstSection addCell:[GSSegmentedCell cellWithText:@"State"
-                                              andObject:self.sampleModel
-                                                 andKey:@"segmented"
-                                              andLabels:@[@"a",@"b",@"c"]
-                                              andValues:@[@1,@2,@6] ]];
+
 	
 	
 	[firstSection addCell:[GSTextFieldCell  cellWithText:@"Required and Email"]];

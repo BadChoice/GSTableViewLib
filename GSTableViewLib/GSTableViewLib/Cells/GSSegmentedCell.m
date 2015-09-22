@@ -12,10 +12,10 @@
 
 -(id) initWithFrame:(CGRect)frame {
 	if (self = [super initWithFrame:frame]) {
-		_segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"ab",@"cd",@"ef", nil]];
-		[_segmentedControl addTarget:self action:@selector(segmentedValueChanged:) forControlEvents:UIControlEventValueChanged];
+		_segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"ab",@"cd",@"ef"]];
+		[_segmentedControl addTarget:self action:@selector(segmentedValueChanged:)
+                    forControlEvents:UIControlEventValueChanged];
 		[_segmentedControl setFrame:CGRectMake(TEXT_X + CONTROL_SIZE, TEXT_Y, 80, 25)];
-		[_segmentedControl setTintColor:[UIColor grayColor]];
 		
 		[self.contentView addSubview:_segmentedControl];
 	}
@@ -24,9 +24,14 @@
 
 +(id)cellWithText:(NSString*)text  andObject:(id)object andKey:(NSString*)key  andLabels:(NSArray*)labels andValues:(NSArray*)values{
 	
-	GSSegmentedCell* cell = [self.class cellWithText:@"Text" andObject:object andKey:key];
-    cell.values = values;
-    cell.labels = labels;        
+	GSSegmentedCell* cell   = [self.class cellWithText:@"Text" andObject:object andKey:key];
+    cell.values             = values;
+    cell.labels             = labels;
+    
+    if(object != nil){
+        NSUInteger index = [values indexOfObject:[object valueForKey:key]];
+        [cell.segmentedControl setSelectedSegmentIndex:index];
+    }
 	
     return cell;
 }

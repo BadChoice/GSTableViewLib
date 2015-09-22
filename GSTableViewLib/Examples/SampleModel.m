@@ -28,7 +28,7 @@
 	self.decimalNumber	= @5.3;
 	self.select			= @"Amazing";
 	self.selectId		= @1;
-    self.segmented		= @1;
+    self.segmented		= @6;
 
 }
 
