@@ -23,17 +23,21 @@
 }
 
 +(id)cellWithText:(NSString*)text  andObject:(id)object andKey:(NSString*)key  andLabels:(NSArray*)labels andValues:(NSArray*)values{
-	
-	GSSegmentedCell* cell   = [self.class cellWithText:@"Text" andObject:object andKey:key];
+    
+    GSSegmentedCell* cell   = [self.class cellWithText:text andObject:object andKey:key];
     cell.values             = values;
     cell.labels             = labels;
     
-    if(object != nil){
-        NSUInteger index = [values indexOfObject:[object valueForKey:key]];
-        [cell.segmentedControl setSelectedSegmentIndex:index];
-    }
-	
+    [cell updateLabel];
+    
     return cell;
+}
+
+-(void)updateLabel{
+    if(self.object != nil){
+        NSUInteger index = [self.values indexOfObject:[self.object valueForKey:self.objectProperty]];
+        [self.segmentedControl setSelectedSegmentIndex:index];
+    }
 }
 
 -(void)layoutSubviews{
@@ -46,6 +50,12 @@
     if(self.values != nil)
         [self updateModelObject:_values[segmentedSender.selectedSegmentIndex]];
 }
+
+-(void)dealloc{
+    self.values = nil;
+    self.labels = nil;
+}
+
 
 @end
 
